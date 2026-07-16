@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  consumer-old>js-yaml: '>=3.15.0 <4'
-  consumer-new>js-yaml: '>=4.2.0 <5'
-
 importers:
 
   .: {}
@@ -15,14 +11,14 @@ importers:
   packages/consumer-new:
     dependencies:
       js-yaml:
-        specifier: '>=4.2.0 <5'
-        version: 4.3.0
+        specifier: 4.1.0
+        version: 4.1.0
 
   packages/consumer-old:
     dependencies:
       js-yaml:
-        specifier: '>=3.15.0 <4'
-        version: 3.15.0
+        specifier: 3.14.1
+        version: 3.14.1
 
 packages:
 
@@ -37,12 +33,12 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  js-yaml@3.15.0:
-    resolution: {integrity: sha512-ttBQIIQPDeLjpPOohtUdXuXUVoA2uIB6fEH9HyJ7234s5mBJ5wTx20njxplLZQgLaOfpmPQA7X2t5AX6tIPbog==}
+  js-yaml@3.14.1:
+    resolution: {integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==}
     hasBin: true
 
-  js-yaml@4.3.0:
-    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
+  js-yaml@4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
 
   sprintf-js@1.0.3:
@@ -58,12 +54,12 @@ snapshots:
 
   esprima@4.0.1: {}
 
-  js-yaml@3.15.0:
+  js-yaml@3.14.1:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
 
-  js-yaml@4.3.0:
+  js-yaml@4.1.0:
     dependencies:
       argparse: 2.0.1
 
